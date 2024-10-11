@@ -31,12 +31,12 @@ struct AlbumDetailView: View {
                         } placeholder: {
                             ProgressView()
                         }
-                        .frame(height: 400)
                     }
                 }
-                Spacer()
             }
+            .padding(.top, 20)
         }
+        .scrollIndicators(.hidden)
         .toolbar {
             if let title = album.title {
                 ToolbarItem(placement: .principal) {
