@@ -37,18 +37,17 @@ struct VideoAlbumView: View {
                     if isFavorite {
                         Image(systemName: "heart.fill")
                             .resizable()
-                            .frame(width: 25)
-                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 25, height: 25)
                             .foregroundStyle(.red)
                     } else {
                         Image(systemName: "heart")
                             .resizable()
-                            .frame(width: 25)
-                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 25, height: 25)
+                            .foregroundStyle(.white)
                     }
                 }
                 .buttonStyle(.plain)
-                .padding(.trailing, 15)
+                .padding()
             }
         }
         .background(Color(uiColor: .systemGray))
