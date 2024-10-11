@@ -16,7 +16,11 @@ struct ContentView: View {
         NavigationStack {
             VStack {
                 if viewModel.albumsList.isEmpty {
-                    ProgressView("Loading content...")
+                    ProgressView {
+                        Text("Loading content...")
+                            .foregroundStyle(.mint)
+                            .bold()
+                    }
                         .controlSize(.large)
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                         .tint(.mint)

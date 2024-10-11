@@ -37,12 +37,14 @@ struct ImageAlbumView: View {
                     if isFavorite {
                         Image(systemName: "heart.fill")
                             .resizable()
-                            .frame(width: 30, height: 30)
+                            .frame(width: 25)
+                            .aspectRatio(contentMode: .fit)
                             .foregroundStyle(.red)
                     } else {
                         Image(systemName: "heart")
                             .resizable()
-                            .frame(width: 30, height: 30)
+                            .frame(width: 25)
+                            .aspectRatio(contentMode: .fit)
                     }
                 }
                 .buttonStyle(.plain)
